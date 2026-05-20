@@ -1,9 +1,9 @@
 class Bctx < Formula
   desc "Context-aware execution runtime for LLM coding agents"
   homepage "https://bctx.dev"
-  url "https://github.com/better-ctx-org/better-ctx/archive/refs/tags/v0.1.11.tar.gz"
+  url "https://github.com/better-ctx-org/better-ctx/archive/refs/tags/v0.1.12.tar.gz"
   sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
-  version "0.1.11"
+  version "0.1.12"
   license "MIT"
   head "https://github.com/better-ctx-org/better-ctx.git", branch: "main"
 
