@@ -1,6 +1,6 @@
 class Bctx < Formula
   desc "Context-aware execution runtime for LLM coding agents"
-  homepage "https://bctx.dev"
+  homepage "https://betterctx.com"
   url "https://github.com/better-ctx-org/better-ctx/archive/refs/tags/v0.1.24.tar.gz"
   sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
   version "0.1.24"
