@@ -1,21 +1,34 @@
 class Bctx < Formula
   desc "Context-aware execution runtime for LLM coding agents"
   homepage "https://betterctx.com"
-  url "https://github.com/better-ctx-org/better-ctx/archive/refs/tags/v0.1.24.tar.gz"
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
   version "0.1.24"
   license "MIT"
-  head "https://github.com/better-ctx-org/better-ctx.git", branch: "main"
 
-  depends_on "rust" => :build
+  on_macos do
+    on_arm do
+      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.24/bctx-0.1.24-aarch64-apple-darwin.tar.gz"
+      sha256 "389566673ffdbd2702c9bd3d9a770dce7bf6f0969713276edd72f3fee95b2e87"
+    end
+    on_intel do
+      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.24/bctx-0.1.24-x86_64-apple-darwin.tar.gz"
+      sha256 "ff4d662912e03965329eaf15c2ed10a8074f9fe75240a2146a37d90816c7bfc0"
+    end
+  end
+
+  on_linux do
+    on_arm do
+      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.24/bctx-0.1.24-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "73e081b84807b34715dbf28a232b302890312918ca3590694329208ea209e5eb"
+    end
+    on_intel do
+      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.24/bctx-0.1.24-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0f26c1031a45e077aff6c5ecfb12338fcb4a8e5f2ed06865540984dd714b2117"
+    end
+  end
 
   def install
-    system "cargo", "install",
-           "--path", "bins/bctx",
-           "--root", prefix,
-           "--no-default-features",
-           "--locked"
-    # cargo install places the binary under prefix/bin/
+    bin.install "bctx"
+    bin.install "bctx-cloud" if File.exist?("bctx-cloud")
   end
 
   test do
