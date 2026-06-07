@@ -1,27 +1,27 @@
 class Bctx < Formula
   desc "Context-aware execution runtime for LLM coding agents"
   homepage "https://betterctx.com"
-  version "0.1.25"
+  version "0.1.26"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.25/bctx-0.1.25-aarch64-apple-darwin.tar.gz"
+      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.26/bctx-0.1.26-aarch64-apple-darwin.tar.gz"
       sha256 ""
     end
     on_intel do
-      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.25/bctx-0.1.25-x86_64-apple-darwin.tar.gz"
+      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.26/bctx-0.1.26-x86_64-apple-darwin.tar.gz"
       sha256 ""
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.25/bctx-0.1.25-aarch64-unknown-linux-gnu.tar.gz"
+      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.26/bctx-0.1.26-aarch64-unknown-linux-gnu.tar.gz"
       sha256 ""
     end
     on_intel do
-      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.25/bctx-0.1.25-x86_64-unknown-linux-gnu.tar.gz"
+      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.26/bctx-0.1.26-x86_64-unknown-linux-gnu.tar.gz"
       sha256 ""
     end
   end
