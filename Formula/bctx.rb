@@ -1,28 +1,28 @@
 class Bctx < Formula
   desc "Context-aware execution runtime for LLM coding agents"
   homepage "https://betterctx.com"
-  version "0.1.27"
-  license "MIT"
+  version "0.1.28"
+  license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.27/bctx-0.1.27-aarch64-apple-darwin.tar.gz"
-      sha256 "d01e6d8106be6a3da20f0be776cb3019cc844ae14954fe80e9a409e39d24ac42"
+      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.28/bctx-0.1.28-aarch64-apple-darwin.tar.gz"
+      sha256 "208b329d3489a9430828fab104fde822e503e04dc4ffb01df66117ebb8be0d8f"
     end
     on_intel do
-      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.27/bctx-0.1.27-x86_64-apple-darwin.tar.gz"
-      sha256 "22707513934e0cbd53a897abac36035e05fc8602a3faf8217f62b0ebf22e91e3"
+      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.28/bctx-0.1.28-x86_64-apple-darwin.tar.gz"
+      sha256 "c10382f3a01722a1fcb760c170d8fc7f91105f4df4f3fb70e679d2512606ef56"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.27/bctx-0.1.27-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "455ee0003a7a5eb72e12d7cfc2e1fff117b67cc4d88cd1c4545c6ec0229aa8fd"
+      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.28/bctx-0.1.28-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "4a3251f8ad544f47e8f5e717ce731af8d0812a89c38756c418822a5d3db44f17"
     end
     on_intel do
-      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.27/bctx-0.1.27-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2a9e4ce2b54773c70838946f237a4b02b5487ba7f5c06b3365e57160ec067661"
+      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.28/bctx-0.1.28-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "e0d4e91c482cfadd44226b48166788b3f019876ea542a6b7a7567926df58a73b"
     end
   end
 
