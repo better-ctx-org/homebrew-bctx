@@ -1,28 +1,28 @@
 class Bctx < Formula
   desc "Context-aware execution runtime for LLM coding agents"
   homepage "https://betterctx.com"
-  version "0.1.37"
+  version "0.1.38"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.37/bctx-0.1.37-aarch64-apple-darwin.tar.gz"
-      sha256 "5433a28f5a79e82a24462e44780390f9914d226475755673905c465f276742f3"
+      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.38/bctx-0.1.38-aarch64-apple-darwin.tar.gz"
+      sha256 "955d9312c72a8ea89b5d0dba481934df2a692eab70f5e7c992ec7681eada867c"
     end
     on_intel do
-      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.37/bctx-0.1.37-x86_64-apple-darwin.tar.gz"
-      sha256 "8556d7061c943f7f2ee13e3b06b7fe2bda103e94d9a12c824cc3509f1476d44e"
+      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.38/bctx-0.1.38-x86_64-apple-darwin.tar.gz"
+      sha256 "e86573e7b27d2e7db5acdaaaa4c58387570429d72a01f337149d744725e3c501"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.37/bctx-0.1.37-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9748cc2b77600717649204732ba174124c71e9ba8c34ecbd8789f41ff8b32aa4"
+      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.38/bctx-0.1.38-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "04d40c1e12943af0939034f751900f2a339d8d75a36132d951ae2b082503fcdc"
     end
     on_intel do
-      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.37/bctx-0.1.37-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7d9d95a6f95c80178bf9437e912060d926604227fba8b91b0603073811ffd7f4"
+      url "https://github.com/better-ctx-org/bctx-releases/releases/download/v0.1.38/bctx-0.1.38-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3be444f5472209d7bfc4add3af8abe8960c52198e59fb4da99617ba3a4b84644"
     end
   end
 
